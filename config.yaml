@@ -1,12 +1,12 @@
 settings:
-  title: "CWorld's Website Status Page"
+  title: "CWorld's Website Status"
   url: 'https://status.cworld.top' # used for Slack messages
-  logo: favicon.ico # image in ./public/ folder
+  logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'CWorld 的所有小站一切安好✨'
-  notAllmonitorsOperational: 'CWorld 的部分小站貌似宕机😶‍🌫️'
+  allmonitorsOperational: 'CWorld 的所有小站一切安好 ✨'
+  notAllmonitorsOperational: 'CWorld 的部分小站貌似宕机 😶‍🌫️'
   monitorLabelOperational: '持续运行'
   monitorLabelNotOperational: '宕机'
   monitorLabelNoData: '暂无监控数据'
@@ -28,6 +28,14 @@ monitors:
     name: r.cworld.top
     description: 'CWorld 的 R 笔记小站'
     url: 'https://r.cworld.top/'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: onedrive
+    name: onedrive.cworld.top
+    description: 'CWorld 的 Onedrive 资源小站'
+    url: 'https://onedrive.cworld.top/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
