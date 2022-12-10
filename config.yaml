@@ -32,6 +32,14 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
+  - id: linux-learning
+    name: linux-cworld-top
+    description: 'CWorld 的 Linux 笔记小站'
+    url: 'https://linux.cworld.top/'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
   - id: onedrive
     name: onedrive-cworld-top
     description: 'CWorld 的 Onedrive 资源小站'
