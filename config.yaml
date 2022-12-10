@@ -15,50 +15,51 @@ settings:
   dayInHistogramNotOperational: ' 次事故' # xx incident(s) recorded
 
 monitors:
-  - id: cworld-blog # unique identifier
-    name: blog-cworld-top
-    description: "CWorld's Blog" # default=empty
-    url: 'https://blog.cworld.top/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+  - id: www-cworld-top
+    name: [www.cworld.top] 主页
+    description: 'CWorld 的主页'
+    url: 'https://r.cworld.top/'
+    method: GET
+    expectStatus: 200
 
-  - id: r-learning
-    name: r-cworld-top
+  - id: blog-cworld-top
+    name: [blog.cworld.top] 博客
+    description: "CWorld's Blog"
+    url: 'https://blog.cworld.top/'
+    method: GET
+    expectStatus: 200
+
+  - id: r-cworld-top
+    name: [r.cworld.top] R 语言笔记
     description: 'CWorld 的 R 笔记小站'
     url: 'https://r.cworld.top/'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
 
-  - id: linux-learning
-    name: linux-cworld-top
+  - id: linux-cworld-top
+    name: [linux.cworld.top] Linux 笔记
     description: 'CWorld 的 Linux 笔记小站'
     url: 'https://linux.cworld.top/'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+ 
+  - id: alist
+    name: [alist-cworld-top] Alist 网盘
+    description: 'CWorld 的超级网盘工具'
+    url: 'https://alist.cworld.top/'
+    method: GET
+    expectStatus: 200
 
-  - id: onedrive
-    name: onedrive-cworld-top
+  - id: onedrive-cworld-top
+    name: [onedrive.cworld.top] Onedrive 网盘
     description: 'CWorld 的 Onedrive 资源小站'
     url: 'https://onedrive.cworld.top/'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
- 
-  - id: alist
-    name: alist-cworld-top
-    description: 'CWorld 的网盘'
-    url: 'https://alist.cworld.top/'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
 
   - id: workers-cloudflare-com # unique identifier
-    name: workers-cloudflare-com
-    description: 'You write code. They handle the rest.' # default=empty
+    name: workers.cloudflare.com
+    description: 'Cloudflare Workers' # default=empty
     url: 'https://workers.cloudflare.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
