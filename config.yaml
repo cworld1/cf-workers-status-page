@@ -15,15 +15,15 @@ settings:
   dayInHistogramNotOperational: ' 次事故' # xx incident(s) recorded
 
 monitors:
-  - id: cworld-home
-    name: [www.cworld.top] 主页
-    description: 'CWorld 的主页'
-    url: 'https://r.cworld.top/'
-
   - id: cworld-blog
     name: [blog.cworld.top] 博客
     description: "CWorld's Blog"
     url: 'https://blog.cworld.top/'
+
+  - id: cworld-home
+    name: [www.cworld.top] 主页
+    description: 'CWorld 的主页'
+    url: 'https://r.cworld.top/'
 
   - id: r-learning
     name: [r.cworld.top] R 语言笔记
