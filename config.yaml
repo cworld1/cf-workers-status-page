@@ -15,43 +15,45 @@ settings:
   dayInHistogramNotOperational: ' 次事故' # xx incident(s) recorded
 
 monitors:
-  - id: cworld-blog
-    name: [blog.cworld.top] 博客
-    description: "CWorld's Blog"
-    url: 'https://blog.cworld.top/'
 
-  - id: cworld-home
-    name: [www.cworld.top] 主页
-    description: 'CWorld 的主页'
-    url: 'https://r.cworld.top/'
+ - id: cworld-home
+   name: [www.cworld.top] 主页
+   description: 'CWorld 的主页'
+   url: 'https://r.cworld.top/'
+ - id: cworld-blog
+   name: [blog.cworld.top] 博客
+   description: "CWorld's Blog"
+   url: 'https://blog.cworld.top/'
 
-  - id: r-learning
-    name: [r.cworld.top] R 语言笔记
-    description: 'CWorld 的 R 笔记小站'
-    url: 'https://r.cworld.top/'
+ - id: r-learning
+   name: [r.cworld.top] R 语言笔记
+   group: 笔记
+   description: 'CWorld 的 R 笔记小站'
+   url: 'https://r.cworld.top/'
 
-  - id: linux-learning
-    name: [linux.cworld.top] Linux 笔记
-    description: 'CWorld 的 Linux 笔记小站'
-    url: 'https://linux.cworld.top/'
+ - id: linux-learning
+   name: [linux.cworld.top] Linux 笔记
+   group: 笔记
+   description: 'CWorld 的 Linux 笔记小站'
+   url: 'https://linux.cworld.top/'
  
-  - id: alist
-    name: [alist.cworld.top] Alist 网盘
-    group: 网盘
-    description: 'CWorld 的超级网盘工具'
-    url: 'https://alist.cworld.top/'
+ - id: alist
+   name: [alist.cworld.top] Alist 网盘
+   group: 网盘
+   description: 'CWorld 的超级网盘工具'
+   url: 'https://alist.cworld.top/'
 
-  - id: onedrive
-    name: [onedrive.cworld.top] Onedrive 网盘
-    group: 网盘
-    description: 'CWorld 的 Onedrive 资源小站'
-    url: 'https://onedrive.cworld.top/'
+ - id: onedrive
+   name: [onedrive.cworld.top] Onedrive 网盘
+   group: 网盘
+   description: 'CWorld 的 Onedrive 资源小站'
+   url: 'https://onedrive.cworld.top/'
 
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'Cloudflare Workers' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # should the titles be links to the service, default=true
+ - id: workers-cloudflare-com # unique identifier
+   name: workers.cloudflare.com
+   description: 'Cloudflare Workers' # default=empty
+   url: 'https://workers.cloudflare.com/' # URL to fetch
+   method: GET # default=GET
+   expectStatus: 200 # operational status, default=200
+   followRedirect: false # should fetch follow redirects, default=false
+   linkable: false # should the titles be links to the service, default=true
