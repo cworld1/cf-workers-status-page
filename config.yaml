@@ -15,47 +15,37 @@ settings:
   dayInHistogramNotOperational: ' 次事故' # xx incident(s) recorded
 
 monitors:
-  - id: www-cworld-top
+  - id: cworld-home
     name: [www.cworld.top] 主页
     description: 'CWorld 的主页'
     url: 'https://r.cworld.top/'
-    method: GET
-    expectStatus: 200
 
-  - id: blog-cworld-top
+  - id: cworld-blog
     name: [blog.cworld.top] 博客
     description: "CWorld's Blog"
     url: 'https://blog.cworld.top/'
-    method: GET
-    expectStatus: 200
 
-  - id: r-cworld-top
+  - id: r-learning
     name: [r.cworld.top] R 语言笔记
     description: 'CWorld 的 R 笔记小站'
     url: 'https://r.cworld.top/'
-    method: GET
-    expectStatus: 200
 
-  - id: linux-cworld-top
+  - id: linux-learning
     name: [linux.cworld.top] Linux 笔记
     description: 'CWorld 的 Linux 笔记小站'
     url: 'https://linux.cworld.top/'
-    method: GET
-    expectStatus: 200
  
   - id: alist
-    name: [alist-cworld-top] Alist 网盘
+    name: [alist.cworld.top] Alist 网盘
+    group: 网盘
     description: 'CWorld 的超级网盘工具'
     url: 'https://alist.cworld.top/'
-    method: GET
-    expectStatus: 200
 
-  - id: onedrive-cworld-top
+  - id: onedrive
     name: [onedrive.cworld.top] Onedrive 网盘
+    group: 网盘
     description: 'CWorld 的 Onedrive 资源小站'
     url: 'https://onedrive.cworld.top/'
-    method: GET
-    expectStatus: 200
 
   - id: workers-cloudflare-com # unique identifier
     name: workers.cloudflare.com
