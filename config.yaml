@@ -16,34 +16,34 @@ settings:
 
 monitors:
 
- - id: cworld-home
+ - id: www-cworld-top
    name: [www.cworld.top] 主页
    description: 'CWorld 的主页'
    url: 'https://r.cworld.top/'
- - id: cworld-blog
+ - id: blog-cworld-top
    name: [blog.cworld.top] 博客
    description: "CWorld's Blog"
    url: 'https://blog.cworld.top/'
 
- - id: r-learning
+ - id: r-cworld-top
    name: [r.cworld.top] R 语言笔记
    group: 笔记
    description: 'CWorld 的 R 笔记小站'
    url: 'https://r.cworld.top/'
 
- - id: linux-learning
+ - id: linux-cworld-top
    name: [linux.cworld.top] Linux 笔记
    group: 笔记
    description: 'CWorld 的 Linux 笔记小站'
    url: 'https://linux.cworld.top/'
  
- - id: alist
+ - id: alist-cworld-top
    name: [alist.cworld.top] Alist 网盘
    group: 网盘
    description: 'CWorld 的超级网盘工具'
    url: 'https://alist.cworld.top/'
 
- - id: onedrive
+ - id: onedrive-cworld-top
    name: [onedrive.cworld.top] Onedrive 网盘
    group: 网盘
    description: 'CWorld 的 Onedrive 资源小站'
