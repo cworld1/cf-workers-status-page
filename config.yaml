@@ -16,9 +16,9 @@ settings:
 
 monitors:
   - id: www-cworld-top
-    name: '[www.cworld.top] 主页'
+    name: '[cworld.top] 主页'
     description: 'CWorld 的主页'
-    url: 'https://r.cworld.top/'
+    url: 'https://cworld.top/'
   - id: blog-cworld-top
     name: '[blog.cworld.top] 博客'
     description: "CWorld's Blog"
@@ -40,11 +40,6 @@ monitors:
     group: 网盘
     description: 'CWorld 的超级网盘工具'
     url: 'https://alist.cworld.top/'
-  - id: onedrive-cworld-top
-    name: '[onedrive.cworld.top] Onedrive 网盘'
-    group: 网盘
-    description: 'CWorld 的 Onedrive 资源小站'
-    url: 'https://onedrive.cworld.top/'
 
   - id: workers-cloudflare-com # unique identifier
     name: '[workers.cloudflare.com]'
