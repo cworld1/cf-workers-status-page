@@ -5,42 +5,49 @@ settings:
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'CWorld 的所有小站一切安好 ✨'
-  notAllmonitorsOperational: 'CWorld 的部分小站貌似宕机 😶‍🌫️'
-  monitorLabelOperational: '持续运行'
-  monitorLabelNotOperational: '宕机'
-  monitorLabelNoData: '暂无监控数据'
-  dayInHistogramNoData: '暂无信息'
-  dayInHistogramOperational: '运转良好'
-  dayInHistogramNotOperational: ' 次事故' # xx incident(s) recorded
+  allmonitorsOperational: 'All Systems Operational ✨'
+  notAllmonitorsOperational: 'Not All Systems Operational 😶‍🌫️'
+  monitorLabelOperational: 'Operational'
+  monitorLabelNotOperational: 'Not Operational'
+  monitorLabelNoData: 'No data'
+  dayInHistogramNoData: 'No data'
+  dayInHistogramOperational: 'All good'
+  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: www-cworld-top
-    name: '[cworld.top] 主页'
-    description: 'CWorld 的主页'
+  # main monitors
+  - id: cworld-top
+    name: '[cworld.top] Homepage'
+    description: 'CWorld homepage'
     url: 'https://cworld.top/'
   - id: blog-cworld-top
-    name: '[blog.cworld.top] 博客'
-    description: "CWorld's Blog"
+    name: '[blog.cworld.top] Blog'
+    description: 'CWorld blog'
     url: 'https://blog.cworld.top/'
-
+  
+  # learnings
+  - id: ccp-cworld-top
+    name: '[ccp.cworld.top] Computer Composition Principle Learning'
+    description: 'CWorld computer composition principle learning'
+    url: 'https://ccp.cworld.top/'
+  - id: db-cworld-top
+    name: '[db.cworld.top] Database Learning'
+    description: 'CWorld database learning'
+    url: 'https://db.cworld.top/'
+  - id: da-cworld-top
+    name: '[da.cworld.top] Data Analysis Learning'
+    description: 'CWorld data analysis learning'
+    url: 'https://da.cworld.top/'
   - id: r-cworld-top
-    name: '[r.cworld.top] R 语言笔记'
-    group: 笔记
-    description: 'CWorld 的 R 笔记小站'
+    name: '[r.cworld.top] R Learning'
+    description: 'CWorld R language leraning'
     url: 'https://r.cworld.top/'
   - id: linux-cworld-top
-    name: '[linux.cworld.top] Linux 笔记'
-    group: 笔记
-    description: 'CWorld 的 Linux 笔记小站'
+    name: '[linux.cworld.top] Linux Lreaning'
+    description: 'CWorld Linux learning'
     url: 'https://linux.cworld.top/'
 
-  - id: alist-cworld-top
-    name: '[alist.cworld.top] Alist 网盘'
-    group: 网盘
-    description: 'CWorld 的超级网盘工具'
-    url: 'https://alist.cworld.top/'
-
+  # universal monitors
   - id: workers-cloudflare-com # unique identifier
     name: '[workers.cloudflare.com]'
     description: 'Cloudflare Workers' # default=empty
